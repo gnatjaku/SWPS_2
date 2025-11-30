@@ -27,3 +27,17 @@ print(dodaj(4,5))
 print(dodaj(3,8.9))
 print(dodaj(kwadrat(6.6),dodaj(6,2)))
 
+#funkcja z wartością domyślną
+def powitanie_uzytkownika(imie,jezyk="PL"):
+    if jezyk=="PL":
+        print(f"Witaj {imie}!")
+    elif jezyk=="EN":
+        print(f"Hello {imie}!")
+    else:
+        print(f"Hi {imie}! {jezyk} nie obsługiwany!")
+
+
+powitanie_uzytkownika("Jan")
+powitanie_uzytkownika("Jan",jezyk="EN")
+powitanie_uzytkownika("Jan",jezyk="DE")
+
