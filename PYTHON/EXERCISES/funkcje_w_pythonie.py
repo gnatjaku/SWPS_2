@@ -41,3 +41,18 @@ powitanie_uzytkownika("Jan")
 powitanie_uzytkownika("Jan",jezyk="EN")
 powitanie_uzytkownika("Jan",jezyk="DE")
 
+#funkcja zwracająca wiele wartości
+def dzielenie(a,b):
+    if b==0:
+        raise ZeroDivisionError("nie dziel przez zero!")
+    return divmod(a,b)
+try:
+    print(dzielenie(10,3))
+    print(dzielenie(-0.65,23.54))
+    print(dzielenie(10, 0))
+except ValueError as e:
+    print(f"błąd: {e}")
+except ZeroDivisionError as e:
+    print(f"błąd: {e}")
+
+
