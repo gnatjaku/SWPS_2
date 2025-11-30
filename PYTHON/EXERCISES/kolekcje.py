@@ -31,3 +31,19 @@ for title,author,year in books:
         library_by_author[author] = []
     library_by_author[author].append((title,year))
 
+
+#lista książek w bibliotece
+for title,author,year in books:
+    print(f"{title} ({year}), autor: {author}")
+    
+#unikalni autorzy w bibliotece
+print("\nUnikalni autorzy w bibliotece:")
+for author in sorted(authors):
+    print(f"author -> {author}")
+    
+#książki wg, autorów
+print(f"\nKsiążki według autorów:")
+for author, titles in library_by_author.items():
+    print(f"{author}:")
+    for title,year in titles:
+        print(f"\t{title} ({year})")
