@@ -54,3 +54,21 @@ print("\n wybranie operacje na kolekcjach:")
 #dodanie nowej książki
 books.append(("Solaris","Stanisław Lem",1961))
 print(f"Dodano nową książkę!Liczba ksiazek w bibliotece: {len(books)}\n")
+
+#sparawdzenie czy autor istnieje!
+author_to_check = "Stanisław Lem"
+if author_to_check in authors:
+    print(f"Autor {author_to_check} istnieje w bibliotece!")
+else:
+    print(f"Dodajemy nowego autora {author_to_check} do biblioteki!")
+    authors.add(author_to_check)
+
+#słownik - dostęp do książek konkretnego autora
+author_lookup = "Bolesław Prus"
+if author_lookup in library_by_author:
+    print(f"\nKsiążki autora: {author_lookup}")
+    for title,year in library_by_author[author_lookup]:
+        print(f"\t - {title} ({year})")
+
+else:
+    print(f"Brak ksiażek authora {author_lookup} w bibliotece!")
