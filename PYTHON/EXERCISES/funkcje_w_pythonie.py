@@ -55,4 +55,41 @@ except ValueError as e:
 except ZeroDivisionError as e:
     print(f"błąd: {e}")
 
+#funkcja z lista jako argumentem
+def srednia(lista):
+    if not lista:
+        raise ValueError("lista jest pusta!")
+    return sum(lista)/len(lista)
+
+print(f"śednia = {srednia([1,2,3,4,5])}")
+print(f"śednia = {srednia([64,73,83,8,0,-3,24,67])}")
+print(f"śednia = {srednia((64,73,83,8,0,-3,8,4,7))}")
+# print(f"śednia = {srednia((64,"sfsfd",83,8,0,-3,8,4,7))}")
+
+start = [64,"sfsfd",83,8,0,-3,8,4,7]
+
+end = list(filter(lambda x: isinstance(x,int),start))
+print(end)
+
+#funkcja anonimowa
+wielom3 = lambda x,y: x**3+2*x**2-x+y
+print(wielom3(3,1))
+print(wielom3(5,5))
+print(wielom3(10,654))
+
+def wiel3(x,y):
+    return x**3+2*x**2-x+y
+
+print(wiel3(3,1))
+print(wiel3(5,5))
+print(wiel3(10,654))
+
+print((lambda x,y: x-y)(3,1))
+
+def multi(n):
+    return lambda x: x*n
+
+print(multi(3)(5))
+
+
 
