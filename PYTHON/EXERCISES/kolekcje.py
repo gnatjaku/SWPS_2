@@ -35,15 +35,22 @@ for title,author,year in books:
 #lista książek w bibliotece
 for title,author,year in books:
     print(f"{title} ({year}), autor: {author}")
-    
+
 #unikalni autorzy w bibliotece
 print("\nUnikalni autorzy w bibliotece:")
 for author in sorted(authors):
     print(f"author -> {author}")
-    
+
 #książki wg, autorów
 print(f"\nKsiążki według autorów:")
 for author, titles in library_by_author.items():
     print(f"{author}:")
     for title,year in titles:
         print(f"\t{title} ({year})")
+
+#operacje na kolekcjach
+print("\n wybranie operacje na kolekcjach:")
+
+#dodanie nowej książki
+books.append(("Solaris","Stanisław Lem",1961))
+print(f"Dodano nową książkę!Liczba ksiazek w bibliotece: {len(books)}\n")
