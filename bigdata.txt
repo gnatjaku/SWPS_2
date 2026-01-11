@@ -1,0 +1,3 @@
+ŚWIAT → Kafka → Flink → NoSQL → Spark → AI → Dashboard
+           ↓
+        Data Lake
