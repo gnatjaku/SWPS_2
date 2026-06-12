@@ -1,0 +1,10 @@
+
+Regulamin zaliczenia kursu AI
+
+1. Student może mieć maksymalnie dwie nieobecności.
+2. Trzecia nieobecność wymaga wykonania zadania dodatkowego.
+3. Projekt końcowy musi zostać oddany do 30 czerwca.
+4. Projekt może być wykonany indywidualnie albo w parach.
+5. Użycie ChatGPT jest dozwolone, ale student musi rozumieć kod.
+6. Plagiat powoduje brak zaliczenia.
+7. Aktywność na zajęciach może podnieść ocenę końcową o pół stopnia.

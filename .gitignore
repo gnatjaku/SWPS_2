@@ -40,6 +40,11 @@ env/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# Large local datasets/artifacts
+BIGDATA/big_data.csv
+NLP/aclImdb_v1_archive
+NLP/aclImdb_v1/
+
 # pytest
 .pytest_cache/
 
@@ -49,4 +54,3 @@ env/
 # OS
 .DS_Store
 Thumbs.db
-

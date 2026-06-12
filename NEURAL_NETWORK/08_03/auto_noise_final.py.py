@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+#disable CUDA
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 # -- Sheet --
 

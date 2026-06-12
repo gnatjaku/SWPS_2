@@ -17,6 +17,13 @@ Wymagania:
 
 from __future__ import annotations
 
+import os
+import sys
+
+# Wymuszenie tej samej wersji Pythona dla drivera i workerów PySpark
+os.environ["PYSPARK_PYTHON"] = sys.executable
+os.environ["PYSPARK_DRIVER_PYTHON"] = sys.executable
+
 from dataclasses import dataclass
 from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple
 
@@ -222,6 +229,7 @@ def main():
         ('{"user_id":124,"email":"X@Y.com","age":40,"country":"PL"}',),
         ('{"user_id":"oops","email":"bad@z.com","age":"NaN","country":"PL"}',),
         ('{"user_id":125,"email":"no_country@z.com","age":22}',),
+        ('{"user_id":126,"email":"jakub.gnat@gmail.com","age":48,"country":"PL"}',),
         ("{not-json}",),
     ]
     df = spark.createDataFrame(data, ["raw_json"])

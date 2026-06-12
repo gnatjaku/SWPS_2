@@ -116,7 +116,7 @@ print(f"\nNajlepszy kandydat: {candidates[0]['name']} - {candidates[0]['score']}
 best = candidates[0]
 print("Szczegóły")
 print(f"Technologie: {best['tech']}")
-print(f"Comunikacja: {best['communication']}")
+print(f"Komunikacja: {best['communication']}")
 print(f"Cost: {best['cost']}")
 print(f"Dostępnosc: {best['availability']}")
 print(f"Fit: {best['fit']}")

@@ -1,3 +1,7 @@
+#disable CUDA
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -229,7 +233,9 @@ plt.xlabel("Epoka")
 plt.ylabel("MSE loss")
 plt.legend()
 plt.grid(True)
-plt.show()
+plt.savefig("training_history.png", dpi=150, bbox_inches="tight")
+plt.close()
+print("Wykres zapisany: training_history.png")
 
 plt.figure(figsize=(10, 5))
 plt.hist(test_mse[y_test == 0], bins=50, alpha=0.7, label="Normal")
@@ -240,7 +246,9 @@ plt.xlabel("Reconstruction MSE")
 plt.ylabel("Liczba próbek")
 plt.legend()
 plt.grid(True)
-plt.show()
+plt.savefig("reconstruction_error.png", dpi=150, bbox_inches="tight")
+plt.close()
+print("Wykres zapisany: reconstruction_error.png")
 
 
 # ============================================================

@@ -1,0 +1,4 @@
+# This project intentionally uses only Python standard library.
+# No external packages are required for the core demo.
+# Optional for development:
+pytest>=8.0.0
