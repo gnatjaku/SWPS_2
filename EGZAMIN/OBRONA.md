@@ -43,7 +43,7 @@ Projekt należy przedstawiać jako edukacyjny prototyp RAG, a nie jako narzędzi
 
 Dzień dobry. Tematem mojej pracy jest **RAGDoctor: lokalny system RAG do odpowiadania na pytania na podstawie dokumentów medycznych**.
 
-Projekt jest edukacyjnym prototypem pokazującym, jak można połączyć lokalne modele AI z mechanizmem RAG, czyli Retrieval-Augmented Generation. System nie diagnozuje pacjentów, nie zaleca leczenia i nie zastępuje konsultacji medycznej. Jego zadaniem jest odpowiadanie na pytania wyłącznie na podstawie wcześniej przygotowanych dokumentów.
+Projekt jest edukacyjnym prototypem pokazującym, jak można połączyć lokalne modele AI z mechanizmem RAG, czyli Retrieval-Augmented Generation.  Jego zadaniem jest odpowiadanie na pytania wyłącznie na podstawie wcześniej przygotowanych dokumentów.
 
 Najważniejsza idea pracy jest taka: zamiast traktować model językowy jako niekontrolowane źródło wiedzy, dostarczam mu wybrany kontekst z dokumentów, a następnie wymuszam odpowiedź opartą na tym kontekście.
 
